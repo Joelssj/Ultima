@@ -1,10 +1,9 @@
 package com.basedatos.basededatos.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
+@Entity
+@Table(schema = "register")
 public class RegisterModel {
     @Id
     @Column(name = "id",updatable = false, nullable = false,  unique = true)
